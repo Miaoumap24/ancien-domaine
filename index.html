@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixiod Project</title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Nous avons une nouvelle adresse !</h1>
+        <p>Notre site a déménagé vers un nouveau domaine.</p>
+        <p>Ne vous inquiétez pas, tout le contenu que vous aimez est toujours là.</p>
+        
+        <a href="https://www.lixiod.fr.eu.org/" class="button">
+            Accéder au nouveau site
+        </a>
+        
+        <p class="small-text">Vous allez être automatiquement redirigé(e) dans quelques secondes si vous ne cliquez pas.</p>
+        
+        <script>
+            const NOUVELLE_URL = "https://www.lixiod.fr.eu.org/"; // **À REMPLACER !**
+            const DELAI_REDIRECTION = 10000; // 5 secondes
+            
+            setTimeout(() => {
+                window.location.href = NOUVELLE_URL;
+            }, DELAI_REDIRECTION);
+        </script>
+    </div>
+</body>
+</html>
